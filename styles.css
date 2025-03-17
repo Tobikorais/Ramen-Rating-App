@@ -108,4 +108,11 @@ form button {
     cursor: pointer;
 }
 
-h
+h2 {
+    background-color: black; /* Set background to black */
+    color: white; /* Set font color to white */
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px; /* Same width as the button */
+    text-align: center;
+}
