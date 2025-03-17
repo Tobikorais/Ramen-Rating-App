@@ -93,11 +93,7 @@ form {
     align-items: center;
 }
 
-form input, form button {
-    margin: 5px 0;
-    font-size: 16px; /* Reverted font size */
-    width: 300px;
-}
+
 
 form button {
     background-color: black; /* Set background to black */
