@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", main);
 
 const ramens = [
-    { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image: "https://moringa.instructure.com/courses/967/files/517801/preview", rating: 5, comment: "Delicious!" },
-    { id: 2, name: "Miso Ramen", restaurant: "Menya", image: "https://moringa.instructure.com/courses/967/files/517800/preview", rating: 4, comment: "Very flavorful!" },
-    { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "https://moringa.instructure.com/courses/967/files/517799/preview", rating: 3, comment: "Rich broth!" },
-    { id: 4, name: "Naruto Ramen", restaurant: "Ichiraku", image: "https://moringa.instructure.com/courses/967/files/517797/preview", rating: 5, comment: "Best ramen ever!" }
+    { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image: "https://moringa.instructure.com/courses/967/files/517801/preview", rating: 10, comment: "Delicious!" },
+    { id: 2, name: "Miso Ramen", restaurant: "Menya", image: "https://moringa.instructure.com/courses/967/files/517800/preview", rating: 8, comment: "Very flavorful!" },
+    { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "https://moringa.instructure.com/courses/967/files/517799/preview", rating: 6, comment: "Rich broth!" },
+    { id: 4, name: "Naruto Ramen", restaurant: "Ichiraku", image: "https://moringa.instructure.com/courses/967/files/517797/preview", rating: 9, comment: "Best ramen ever!" }
 ];
 
 function displayRamens() {
@@ -39,7 +39,7 @@ function handleClick(ramen) {
     document.getElementById("ramen-name").textContent = ramen.name;
     document.getElementById("ramen-restaurant").textContent = ramen.restaurant;
     document.getElementById("ramen-image").src = ramen.image;
-    document.getElementById("ramen-rating").textContent = ramen.rating;
+    document.getElementById("ramen-rating").textContent = `${ramen.rating}/10`;
     document.getElementById("ramen-comment").textContent = ramen.comment;
 }
 
