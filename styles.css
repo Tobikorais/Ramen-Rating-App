@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Reverted font size */
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2px; /* Reduced padding */
+    width: 100%; /* Reverted background width */
+    margin-bottom: 20px; /* Add margin to lower the header */
+    font-size: 8px; /* Further reduced font size */
+    height: 30px; /* Reduced height */
+}
+
+#ramen-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#ramen-menu .ramen-item {
+    position: relative;
+    margin: 0; /* Remove space between pictures */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70px; /* Keep the same width */
+    height: 70px; /* Keep the same height */
+    overflow: hidden;
+}
+
+#ramen-menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#ramen-menu .ramen-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 0;
+}
+
+#ramen-detail {
+    text-align: center;
+    margin-bottom: 10px; /* Reduced space */
+}
+
+#new-ramen-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#ramen-detail .ramen-item {
+    position: relative;
+    width: 250px; /* Increased width */
+    height: 150px; /* Increased height */
+    overflow: hidden;
+}
+
+#ramen-detail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#ramen-detail .ramen-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form button {
+    margin: 5px 0;
+    font-size: 16px; /* Reverted font size */
+    width: 300px;
+}
+
+form button {
+    background-color: black; /* Set background to black */
+    color: white; /* Set font color to white */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 {
+    background-color: black; /* Set background to black */
+    color: white; /* Set font color to white */
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px; /* Same width as the button */
+    text-align: center;
+}
